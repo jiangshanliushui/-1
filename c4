@@ -1,0 +1,11 @@
+import requests
+import json
+
+
+while True:
+    msg = input('我：')
+    sess = requests.get(
+        ('http://api.avatardata.cn/Tuling/Ask?key=8e35be39afae4a4b9d57d531f707f5b0&info=' + msg))
+    js = sess.text
+    js = json.loads(js)
+    print('机器人：', js['result']['text'])
