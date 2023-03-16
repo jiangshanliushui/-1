@@ -4,7 +4,7 @@
 int main()
 {
     int i,res;//每秒点击i次，每res秒点击1次
-    printf("请输入每秒点击的频率\n");
+    printf("请输入每秒点击的频\n");
     scanf("%d",&i);
     res=1000/i;//
 	printf("按空格执行");
